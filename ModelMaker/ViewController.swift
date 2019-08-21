@@ -146,30 +146,6 @@ extension ViewController:NSTextFieldDelegate{
         }
     }
 }
-extension String{
-    func converToHalfWidth() -> String {
-        var dict = [String:String]()
-        for (index,ele) in String.fullWidthPunctuation().enumerated(){
-            for (index2,ele2) in String.halfWidthPunctuation().enumerated(){
-                if index == index2{
-                    dict["\(ele)"] = "\(ele2)"
-                }
-            }
-        }
-        var result = ""
-        result = self
-        for (k,v) in dict {
-            result = result.replacingOccurrences(of: k, with: v)
-        }
-        return result
-    }
-    static func fullWidthPunctuation()->String{
-        return "“”，。：¥"
-    }
-    static func halfWidthPunctuation()->String{
-        return "\"\",.:¥"
-    }
-}
 
 extension ViewController:NSTextViewDelegate{
     
