@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import WTKitMacOS
 class ViewController: NSViewController {
     
     
