@@ -94,6 +94,7 @@ class ViewController: NSViewController {
                 let string = String.init(data: data, encoding: .utf8)!
                 //jsonObject = JSONSerialization.WTJSONObject(with: data)! as AnyObject
                 //jsonTextView.text = jsonString
+                
                 textView.string = string
             }catch let error as NSError{
                 print("\(error)")
@@ -151,7 +152,8 @@ extension ViewController:NSTextViewDelegate{
     
     public func textDidChange(_ notification: Notification){
         print("notification:\(notification)")
-        
+        textView.backgroundColor = NSColor.black
+        textView.textColor = NSColor.white
         jsonError = nil
         if let a:NSTextView = notification.object as? NSTextView {
 //            let string = textView.string
