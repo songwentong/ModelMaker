@@ -77,17 +77,19 @@ public class WTModelMaker {
     
     /// 尝试打印出一个json对应的Model属性
     /// NSArray和NSDictionary可能需要自定义为一个model类型
-    public func WTSwiftModelString(with className:String = "XXX", jsonString:String, usingHeader:Bool = false)->String{
+    public func WTSwiftModelString(with className:String = "XXX", jsonString:String, usingHeader:Bool = false, isRootClass:Bool = true)->String{
         
         var stringToPrint:String = String()
-        
+        var subClassString = "\n"
         var codingKeys:String = String()
         
         if usingHeader == true {
             stringToPrint += headerString(className: className)
         }
         var subModelDict:[String:String] = [String:String]()
-        
+        if isRootClass {
+            stringToPrint += "import Foundation\n"
+        }
         stringToPrint += "public"
         stringToPrint += " "
         stringToPrint += getClassOrStructName()
@@ -113,18 +115,6 @@ public class WTModelMaker {
                 if let classForCoder = value.classForCoder {
                     
                     var string = NSStringFromClass(classForCoder)
-                    var codableValue = true
-                    if string == "NSArray"{
-                        if value is [Int] || value is [String]{
-//                            print("\(key)")
-                        }else{
-//                            print("\(key)")
-                            codableValue = false
-                        }
-                    }
-                    if !codableValue{
-                        stringToPrint += "//"
-                    }
                     stringToPrint += "var \(nameReplacedKey):"
                     if string == "NSString" {
                         string = "String"
@@ -173,27 +163,37 @@ public class WTModelMaker {
                             //print("string array")
                             stringToPrint += "[String]"
                         }else{
-                            stringToPrint += "//[Any]"
+                            guard let list = value as? [Any] else{
+                                return ""
+                            }
+                            guard let first = list.first else{
+                                return ""
+                            }
+                            let data = try! JSONSerialization.data(withJSONObject: first, options: [])
+                            let valueString = data.utf8String()
+                            subClassString += self.WTSwiftModelString(with: nameReplacedKey, jsonString: valueString, usingHeader: false, isRootClass:false)
+                            stringToPrint += "[\(nameReplacedKey)]"
                         }
                         
                     }else if string == "NSDictionary"{
+                        let tempData = try! JSONSerialization.data(withJSONObject: value, options: [])
+                        let tempString = String.init(data: tempData, encoding: String.Encoding.utf8)
+                        let subClassName = nameReplacedKey + "_class"
+                        subModelDict[subClassName] = tempString
+                        stringToPrint += "\(subClassName) = \(subClassName)()"
+                        /*
                         if value is [String:Int]{
                             stringToPrint += "[String: Int]"
                         }else if value is [String:String]{
                             stringToPrint += "[String: String]"
                         }else{
-                            let tempData = try! JSONSerialization.data(withJSONObject: value, options: [])
-                            let tempString = String.init(data: tempData, encoding: String.Encoding.utf8)
-                            subModelDict[nameReplacedKey] = tempString
-                            stringToPrint += "\(nameReplacedKey)"
-                        }
+                            
+                        }*/
                     }
 //                    codingKeys += crlf
                     codingKeys += indent
                     codingKeys += indent
-                    if !codableValue{
-                        codingKeys += "//"
-                    }
+                    
                     codingKeys += "case \(nameReplacedKey) = \"\(key)\""
                     codingKeys += crlf
                     
@@ -209,9 +209,7 @@ public class WTModelMaker {
             stringToPrint = stringToPrint + codingKeys
         }
         stringToPrint = stringToPrint + "}" + crlf
-        for (key,value) in subModelDict{
-            stringToPrint += WTSwiftModelString(with: key, jsonString: value)
-        }//end of class
+        
         
         //start of extension
         var debugDescription = propertyNames.reduce(into: String()) { (result, str) in
@@ -230,6 +228,10 @@ public class WTModelMaker {
         stringToPrint += debugDescription + "\n"
         stringToPrint.append("    }\n")
         stringToPrint.append("}")
+        stringToPrint += subClassString
+        for (key,value) in subModelDict{
+            stringToPrint += WTSwiftModelString(with: key, jsonString: value,usingHeader: false,isRootClass: false)
+        }//end of class
         return stringToPrint
     }
 }
