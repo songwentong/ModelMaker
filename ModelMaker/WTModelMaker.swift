@@ -180,7 +180,10 @@ public class WTModelMaker {
                         let tempString = String.init(data: tempData, encoding: String.Encoding.utf8)
                         let subClassName = nameReplacedKey + "_class"
                         subModelDict[subClassName] = tempString
-                        stringToPrint += "\(subClassName) = \(subClassName)()"
+                        stringToPrint += "\(subClassName)"
+                        if !useStruct{
+                            stringToPrint += " = \(subClassName)()"
+                        }
                         /*
                         if value is [String:Int]{
                             stringToPrint += "[String: Int]"
