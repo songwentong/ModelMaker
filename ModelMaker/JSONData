@@ -1,4 +1,36 @@
-{"key1":"value1",
-"let":"let",
-"class":"class",
-"qqq":"qqqq"}
+{
+  "data": [
+    {
+      "id": "3132333435",
+      "exchange_name": "CMAGG",
+      "source": "BTC",
+      "target": "USDT",
+      "timestamp": 0,
+      "price": 8888,
+      "open_24_hour": 0,
+      "volume_24_hour": 0,
+      "volume_24_hour_to": 0,
+      "high_24_hour": 0,
+      "low_24_hour": 0,
+      "change_24_hour": 7777,
+      "change_pct_24_hour": 0.87
+    },
+    {
+      "id": "313233343536",
+      "exchange_name": "Bitfinex",
+      "source": "ETH",
+      "target": "BTC",
+      "timestamp": 0,
+      "price": 777,
+      "open_24_hour": 0,
+      "volume_24_hour": 0,
+      "volume_24_hour_to": 555,
+      "high_24_hour": 0,
+      "low_24_hour": 0,
+      "change_24_hour": 555,
+      "change_pct_24_hour": 0.34
+    }
+  ],
+  "title": "鎴戠殑鍏虫敞",
+  "type": "favorite"
+}
