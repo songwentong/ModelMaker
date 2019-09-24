@@ -112,7 +112,7 @@ class ViewController: NSViewController {
                 let className = cell2.stringValue
                 
                 let filePath = path + "/" + className + ".swift"
-                let modelString = WTModelMaker.default.WTSwiftModelString(with: className, jsonString: textView.string,usingHeader: true)
+//                let modelString = WTModelMaker.default.WTSwiftModelString(with: className, jsonString: textView.string,usingHeader: true)
                 
                 DispatchQueue.global().async {
                     do {
