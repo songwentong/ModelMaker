@@ -114,16 +114,18 @@ class ViewController: NSViewController {
                 let filePath = path + "/" + className + ".swift"
 //                let modelString = WTModelMaker.default.WTSwiftModelString(with: className, jsonString: textView.string,usingHeader: true)
                 
-                DispatchQueue.global().async {
+                
                     do {
-                        try self.effect.string.write(toFile: filePath, atomically: true, encoding: .utf8)
-                        print("写文件成功,请在Finder查看")
-                        let url = URL.init(fileURLWithPath: filePath, relativeTo: nil)
-                        NSWorkspace.shared.activateFileViewerSelecting([url])
+                        
+                            try self.effect.string.write(toFile: filePath, atomically: true, encoding: .utf8)
+                            print("写文件成功,请在Finder查看")
+                            let url = URL.init(fileURLWithPath: filePath, relativeTo: nil)
+                            NSWorkspace.shared.activateFileViewerSelecting([url])
+                        
                     }catch{
                         print("写文件失败")
                     }
-                }
+                
                 
                 
             }
