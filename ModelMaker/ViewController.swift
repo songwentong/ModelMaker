@@ -34,7 +34,15 @@ class ViewController: NSViewController {
         setDefaultString()
         checkJSONText()
         testCodableRead()
-        
+        testMirror()
+    }
+    func testMirror() -> Void {
+        let mi = Mirror.init(reflecting: self)
+        for child in mi.children{
+            let name = child.label
+            let value = child.value
+            print("\(String(describing: name)),\(value)")
+        }
     }
     override func viewDidAppear() {
         super.viewDidAppear()
