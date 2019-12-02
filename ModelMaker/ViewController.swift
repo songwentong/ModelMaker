@@ -46,6 +46,12 @@ class ViewController: NSViewController {
                 if let n = name{
                     value = 2
                     self.setValue(2, forKey: n)
+                    
+//                    let passUnretained = Unmanaged.passUnretained(self)
+//                    let opaque = passUnretained.toOpaque()
+//                    opaque.assumingMemoryBound(to: <#T##T.Type#>)
+                    //public func assumingMemoryBound<T>(to: T.Type) -> UnsafeMutablePointer<T>
+                    //UnsafeMutableRawPointer.self.assumingMemoryBound
                     print("\(testNum)")
                 }
             }
