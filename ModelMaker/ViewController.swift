@@ -23,6 +23,7 @@ class ViewController: NSViewController {
     var modelStructName: String = "ModelName"
     var isJSON = false
     var jsonError:NSError? = nil;
+    @objc var testNum:Int = 1
     //var is
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +41,14 @@ class ViewController: NSViewController {
         let mi = Mirror.init(reflecting: self)
         for child in mi.children{
             let name = child.label
-            let value = child.value
+            var value = child.value
+            if name == "testNum" {
+                if let n = name{
+                    value = 2
+                    self.setValue(2, forKey: n)
+                    print("\(testNum)")
+                }
+            }
             print("\(String(describing: name)),\(value)")
         }
     }
