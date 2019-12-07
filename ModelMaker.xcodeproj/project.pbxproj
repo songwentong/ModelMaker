@@ -64,6 +64,7 @@
 		773EDA57207F345700DB2BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77A39E642088304F00D3F866 /* JSONData */ = {isa = PBXFileReference; lastKnownFileType = text; path = JSONData; sourceTree = "<group>"; };
 		E189A9EC2316AD6400AF1390 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		E1D8659C239608C900D967A0 /* libcurl.4.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcurl.4.tbd; path = usr/lib/libcurl.4.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 				773EDA49207F345700DB2BAA /* ModelMakerTests */,
 				773EDA54207F345700DB2BAA /* ModelMakerUITests */,
 				773EDA35207F345600DB2BAA /* Products */,
+				E1D8659B239608C900D967A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +145,14 @@
 				773EDA57207F345700DB2BAA /* Info.plist */,
 			);
 			path = ModelMakerUITests;
+			sourceTree = "<group>";
+		};
+		E1D8659B239608C900D967A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1D8659C239608C900D967A0 /* libcurl.4.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

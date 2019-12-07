@@ -4,10 +4,11 @@
 //
 //  Created by SongWentong on 24/08/2017.
 //  Copyright © 2017 songwentong. All rights reserved.
-//
+//  gson 支持curl请求
 
 import Cocoa
 import WTKit
+
 class ViewController: NSViewController {
     
     
@@ -36,6 +37,7 @@ class ViewController: NSViewController {
         checkJSONText()
         testCodableRead()
         testMirror()
+        
     }
     func testMirror() -> Void {
         let mi = Mirror.init(reflecting: self)
