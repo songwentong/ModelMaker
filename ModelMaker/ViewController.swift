@@ -30,7 +30,7 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        WTModelMaker.default.needQuestionMark = false
+        WTModelMaker.default.needOptionalMark = false
         WTModelMaker.default.useStruct = false
         typeSegment.selectedSegment = 0
         setDefaultString()
@@ -67,9 +67,9 @@ class ViewController: NSViewController {
     
     @IBAction func addQuestionMark(_ sender: Any) {
         if autoRemoveButton.state == .on{
-            WTModelMaker.default.needQuestionMark = true
+            WTModelMaker.default.needOptionalMark = true
         }else{
-            WTModelMaker.default.needQuestionMark = false
+            WTModelMaker.default.needOptionalMark = false
         }
         checkJSONText()
     }
