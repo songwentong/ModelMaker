@@ -8,7 +8,9 @@
 
 import Cocoa
 import WTKit
-
+class Empty: Codable {
+    
+}
 class ViewController: NSViewController {
     
     
@@ -37,7 +39,25 @@ class ViewController: NSViewController {
         checkJSONText()
         testCodableRead()
         testMirror()
+//        let mir = Mirror.init(reflecting: self)
+//        print("\(mir.description)")
+        testRequest()
+    }
+    func testRequest() {
+        let task = URLSession.shared.dataTask(with: "https://www.apple.com?a=a&b=b",method: .get, parameters: ["c":"c"] , object: { (obj:Empty) in
+
+        }) { (data, res, err) in
+
+        }
+        print("\(task)")
         
+
+    }
+    override var description: String{
+        return "ABC"
+    }
+    override var debugDescription: String{
+        return "debug"
     }
     func testMirror() -> Void {
         let mi = Mirror.init(reflecting: self)

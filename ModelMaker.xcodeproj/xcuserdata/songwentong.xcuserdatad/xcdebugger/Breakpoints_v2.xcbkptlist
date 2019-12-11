@@ -7,38 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F5377FFA-9A06-4ADB-93A9-1DA7D7BA21D3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/ModelMaker-ftekfhxbxpvsxrgaknsjfqwhhiog/SourcePackages/checkouts/WTKit/Sources/WTKit/WTModelMaker.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
-            landmarkName = "WTSwiftModelString(with:jsonString:usingHeader:isRootClass:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F5302B4C-54B8-405E-BBE1-AA57FAEC1D40"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/ModelMaker-ftekfhxbxpvsxrgaknsjfqwhhiog/SourcePackages/checkouts/WTKit/Sources/WTKit/WTModelMaker.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
-            landmarkName = "WTSwiftModelString(with:jsonString:usingHeader:isRootClass:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "095A1297-CD94-4C82-BB19-17E72EDCB2F5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"

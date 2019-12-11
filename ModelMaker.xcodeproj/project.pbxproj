@@ -15,6 +15,7 @@
 		773EDA56207F345700DB2BAA /* ModelMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773EDA55207F345700DB2BAA /* ModelMakerUITests.swift */; };
 		77A39E652088304F00D3F866 /* JSONData in Resources */ = {isa = PBXBuildFile; fileRef = 77A39E642088304F00D3F866 /* JSONData */; };
 		E189A9ED2316AD6400AF1390 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189A9EC2316AD6400AF1390 /* Test.swift */; };
+		E19614A923A115DF0044175D /* AutoBuild.sh in Resources */ = {isa = PBXBuildFile; fileRef = E19614A823A115DF0044175D /* AutoBuild.sh */; };
 		E1BD8AB1233881E4005B39C3 /* WTKit in Frameworks */ = {isa = PBXBuildFile; productRef = E1BD8AB0233881E4005B39C3 /* WTKit */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		773EDA57207F345700DB2BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77A39E642088304F00D3F866 /* JSONData */ = {isa = PBXFileReference; lastKnownFileType = text; path = JSONData; sourceTree = "<group>"; };
 		E189A9EC2316AD6400AF1390 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		E19614A823A115DF0044175D /* AutoBuild.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = AutoBuild.sh; sourceTree = "<group>"; };
 		E1D8659C239608C900D967A0 /* libcurl.4.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcurl.4.tbd; path = usr/lib/libcurl.4.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -120,6 +122,7 @@
 				773EDA37207F345600DB2BAA /* AppDelegate.swift */,
 				773EDA39207F345600DB2BAA /* ViewController.swift */,
 				E189A9EC2316AD6400AF1390 /* Test.swift */,
+				E19614A823A115DF0044175D /* AutoBuild.sh */,
 				773EDA3B207F345700DB2BAA /* Assets.xcassets */,
 				773EDA3D207F345700DB2BAA /* Main.storyboard */,
 				773EDA40207F345700DB2BAA /* Info.plist */,
@@ -271,6 +274,7 @@
 			files = (
 				773EDA3C207F345700DB2BAA /* Assets.xcassets in Resources */,
 				77A39E652088304F00D3F866 /* JSONData in Resources */,
+				E19614A923A115DF0044175D /* AutoBuild.sh in Resources */,
 				773EDA3F207F345700DB2BAA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
