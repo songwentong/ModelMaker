@@ -39,8 +39,8 @@ class ViewController: NSViewController {
         checkJSONText()
         testCodableRead()
         testMirror()
-//        let mir = Mirror.init(reflecting: self)
-//        print("\(mir.description)")
+        //        let mir = Mirror.init(reflecting: self)
+        //        print("\(mir.description)")
         testRequest()
     }
     func testRequest() {
@@ -53,14 +53,14 @@ class ViewController: NSViewController {
             
         }
         task.resume()
-//        let task = URLSession.shared.dataTask(with: "https://www.apple.com?a=a&b=b",method: .get, parameters: ["c":"c"] , object: { (obj:Empty) in
-//
-//        }) { (data, res, err) in
-//
-//        }
-//        print("\(task)")
-//
-
+        //        let task = URLSession.shared.dataTask(with: "https://www.apple.com?a=a&b=b",method: .get, parameters: ["c":"c"] , object: { (obj:Empty) in
+        //
+        //        }) { (data, res, err) in
+        //
+        //        }
+        //        print("\(task)")
+        //
+        
     }
     override var description: String{
         return "ABC"
@@ -78,9 +78,9 @@ class ViewController: NSViewController {
                     value = 2
                     self.setValue(2, forKey: n)
                     
-//                    let passUnretained = Unmanaged.passUnretained(self)
-//                    let opaque = passUnretained.toOpaque()
-//                    opaque.assumingMemoryBound(to: <#T##T.Type#>)
+                    //                    let passUnretained = Unmanaged.passUnretained(self)
+                    //                    let opaque = passUnretained.toOpaque()
+                    //                    opaque.assumingMemoryBound(to: <#T##T.Type#>)
                     //public func assumingMemoryBound<T>(to: T.Type) -> UnsafeMutablePointer<T>
                     //UnsafeMutableRawPointer.self.assumingMemoryBound
                     print("\(testNum)")
@@ -113,16 +113,18 @@ class ViewController: NSViewController {
     
     //这是一个model创建的工具，运行看效果吧,不错吧，😜
     func testCodableRead(){
-        /*
-         if let url:URL = Bundle.main.url(forResource: "JSONData", withExtension: nil) {
-         do{
-         let data = try Data.init(contentsOf: url)
-         let instance = try JSONDecoder().decode(ModelName.self, from: data)
-         print("\(instance)")
-         }catch let error as NSError{
-         print("\(error)")
-         }
-         }*/
+        
+        if let url:URL = Bundle.main.url(forResource: "JSONData", withExtension: nil) {
+            do{
+                let data = try Data.init(contentsOf: url)
+                let instance = try JSONDecoder().decode(MyModel.self, from: data)
+                debugPrint("\(instance.jsonString)")
+                print("\(instance.jsonString)")
+                print("\(instance)")
+            }catch let error as NSError{
+                print("\(error)")
+            }
+        }
         
     }
     
@@ -165,19 +167,19 @@ class ViewController: NSViewController {
                 let className = cell2.stringValue
                 
                 let filePath = path + "/" + className + ".swift"
-//                let modelString = WTModelMaker.default.WTSwiftModelString(with: className, jsonString: textView.string,usingHeader: true)
+                //                let modelString = WTModelMaker.default.WTSwiftModelString(with: className, jsonString: textView.string,usingHeader: true)
                 
                 
-                    do {
-                        
-                            try self.effect.string.write(toFile: filePath, atomically: true, encoding: .utf8)
-                            print("写文件成功,请在Finder查看")
-                            let url = URL.init(fileURLWithPath: filePath, relativeTo: nil)
-                            NSWorkspace.shared.activateFileViewerSelecting([url])
-                        
-                    }catch{
-                        print("写文件失败")
-                    }
+                do {
+                    
+                    try self.effect.string.write(toFile: filePath, atomically: true, encoding: .utf8)
+                    print("写文件成功,请在Finder查看")
+                    let url = URL.init(fileURLWithPath: filePath, relativeTo: nil)
+                    NSWorkspace.shared.activateFileViewerSelecting([url])
+                    
+                }catch{
+                    print("写文件失败")
+                }
                 
                 
                 
@@ -213,8 +215,8 @@ extension ViewController:NSTextViewDelegate{
         textView.textColor = NSColor.white
         jsonError = nil
         if let a:NSTextView = notification.object as? NSTextView {
-//            let string = textView.string
-//            textView.string = string as String
+            //            let string = textView.string
+            //            textView.string = string as String
             if a == textView {
                 checkJSONText()
             }
@@ -225,11 +227,11 @@ extension ViewController:NSTextViewDelegate{
         //        textView.textColor = NSColor.black
         
         var string = textView.string
-//        let str = "“”，。：¥“”，。：¥“”，。：¥".converToHalfWidth()
-//        print("\(str)")
+        //        let str = "“”，。：¥“”，。：¥“”，。：¥".converToHalfWidth()
+        //        print("\(str)")
         
         string = string.converToHalfWidth()
-//        string = string.replacingOccurrences(of: "”", with: "\"")
+        //        string = string.replacingOccurrences(of: "”", with: "\"")
         guard let data = string.data(using: .utf8) else{
             return
         }
@@ -255,7 +257,7 @@ extension ViewController:NSTextViewDelegate{
             if statusLightView.layer == nil{
                 statusLightView.layer = CALayer.init()
             }
-//            statusLightView.backgroundColor = NSColor.green.cgColor
+            //            statusLightView.backgroundColor = NSColor.green.cgColor
             statusLightView.layer?.backgroundColor = NSColor.green.cgColor
             statusTextField.cell?.stringValue = "合法的JSON"
         }else{
