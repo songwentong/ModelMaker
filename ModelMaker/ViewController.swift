@@ -44,13 +44,22 @@ class ViewController: NSViewController {
         testRequest()
     }
     func testRequest() {
-        let task = URLSession.shared.dataTask(with: "https://www.apple.com?a=a&b=b",method: .get, parameters: ["c":"c"] , object: { (obj:Empty) in
-
-        }) { (data, res, err) in
-
+        let configuration = URLSessionConfiguration.default
+        configuration.httpAdditionalHeaders = ["testAddtionSWT":"testAddtionSWT"]
+        let session = URLSession.init(configuration: configuration)
+        var request = URLRequest.init(url: "http://www.baidu.com".urlValue())
+        request.setValue("testAddtionSWTReq", forHTTPHeaderField: "testAddtionSWTReq")
+        let task = session.dataTask(with: request) { (data, res, err) in
+            
         }
-        print("\(task)")
-        
+        task.resume()
+//        let task = URLSession.shared.dataTask(with: "https://www.apple.com?a=a&b=b",method: .get, parameters: ["c":"c"] , object: { (obj:Empty) in
+//
+//        }) { (data, res, err) in
+//
+//        }
+//        print("\(task)")
+//
 
     }
     override var description: String{
