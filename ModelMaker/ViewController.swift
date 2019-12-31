@@ -113,7 +113,7 @@ class ViewController: NSViewController {
     
     //这是一个model创建的工具，运行看效果吧,不错吧，😜
     func testCodableRead(){
-        
+        /*
         if let url:URL = Bundle.main.url(forResource: "JSONData", withExtension: nil) {
             do{
                 let data = try Data.init(contentsOf: url)
@@ -125,6 +125,7 @@ class ViewController: NSViewController {
                 print("\(error)")
             }
         }
+        */
         
     }
     

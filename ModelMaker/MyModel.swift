@@ -1,67 +1,67 @@
 //
-//  MyModel.swift
+//  ModelName.swift
 //
-//  this file is auto create by WTKit on 2019-12-20 11:39:42.
+//  this file is auto create by WTKit on 2020-12-31 15:29:28.
 //  site:https://github.com/songwentong/ModelMaker
 //  Thank you for use my json model maker😜
 //
 
 import Foundation
-public class MyModel:NSObject, Codable {
+public class ModelName:NSObject, Codable {
+    var data:[ModelName_data] = [ModelName_data]()
     var title:String = ""
     var type:String = ""
-    var data:[MyModel_data] = [MyModel_data]()
     enum CodingKeys: String, CodingKey {
+        case data = "data"
         case title = "title"
         case type = "type"
-        case data = "data"
     }
 }
-public extension MyModel{
+public extension ModelName{
     override var description: String{
         return debugDescription
     }
     override var debugDescription: String{
-        return "debugDescription of MyModel:\ntitle:\(title)\ntype:\(type)\ndata:\(data)\n"
-
+        return "debugDescription of ModelName:\ndata:\(data)\ntitle:\(title)\ntype:\(type)\n"
+        
     }
 }
-public class MyModel_data:NSObject, Codable {
-    var volume_24_hour_to:Int = -1
-    var exchange_name:String = ""
-    var id:String = ""
-    var timestamp:Int = -1
-    var price:Int = -1
-    var target:String = ""
-    var source:String = ""
+public class ModelName_data:NSObject, Codable {
     var open_24_hour:Int = -1
-    var change_24_hour:Int = -1
-    var high_24_hour:Int = -1
-    var change_pct_24_hour:Double = -1
-    var volume_24_hour:Int = -1
+    var price:Int = -1
     var low_24_hour:Int = -1
+    var change_24_hour:Int = -1
+    var target:String = ""
+    var volume_24_hour_to:Int = -1
+    var volume_24_hour:Int = -1
+    var timestamp:Int = -1
+    var change_pct_24_hour:Double = -1
+    var high_24_hour:Int = -1
+    var id:String = ""
+    var exchange_name:String = ""
+    var source:String = ""
     enum CodingKeys: String, CodingKey {
-        case volume_24_hour_to = "volume_24_hour_to"
-        case exchange_name = "exchange_name"
-        case id = "id"
-        case timestamp = "timestamp"
-        case price = "price"
-        case target = "target"
-        case source = "source"
         case open_24_hour = "open_24_hour"
-        case change_24_hour = "change_24_hour"
-        case high_24_hour = "high_24_hour"
-        case change_pct_24_hour = "change_pct_24_hour"
-        case volume_24_hour = "volume_24_hour"
+        case price = "price"
         case low_24_hour = "low_24_hour"
+        case change_24_hour = "change_24_hour"
+        case target = "target"
+        case volume_24_hour_to = "volume_24_hour_to"
+        case volume_24_hour = "volume_24_hour"
+        case timestamp = "timestamp"
+        case change_pct_24_hour = "change_pct_24_hour"
+        case high_24_hour = "high_24_hour"
+        case id = "id"
+        case exchange_name = "exchange_name"
+        case source = "source"
     }
 }
-public extension MyModel_data{
+public extension ModelName_data{
     override var description: String{
         return debugDescription
     }
     override var debugDescription: String{
-        return "debugDescription of MyModel_data:\nvolume_24_hour_to:\(volume_24_hour_to)\nexchange_name:\(exchange_name)\nid:\(id)\ntimestamp:\(timestamp)\nprice:\(price)\ntarget:\(target)\nsource:\(source)\nopen_24_hour:\(open_24_hour)\nchange_24_hour:\(change_24_hour)\nhigh_24_hour:\(high_24_hour)\nchange_pct_24_hour:\(change_pct_24_hour)\nvolume_24_hour:\(volume_24_hour)\nlow_24_hour:\(low_24_hour)\n"
-
+        return "debugDescription of ModelName_data:\nopen_24_hour:\(open_24_hour)\nprice:\(price)\nlow_24_hour:\(low_24_hour)\nchange_24_hour:\(change_24_hour)\ntarget:\(target)\nvolume_24_hour_to:\(volume_24_hour_to)\nvolume_24_hour:\(volume_24_hour)\ntimestamp:\(timestamp)\nchange_pct_24_hour:\(change_pct_24_hour)\nhigh_24_hour:\(high_24_hour)\nid:\(id)\nexchange_name:\(exchange_name)\nsource:\(source)\n"
+        
     }
 }
