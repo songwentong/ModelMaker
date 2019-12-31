@@ -47,7 +47,7 @@ class ViewController: NSViewController {
         let configuration = URLSessionConfiguration.default
         configuration.httpAdditionalHeaders = ["testAddtionSWT":"testAddtionSWT"]
         let session = URLSession.init(configuration: configuration)
-        var request = URLRequest.init(url: "http://www.baidu.com".urlValue())
+        var request = URLRequest.init(url: "http://www.baidu.com".urlValue)
         request.setValue("testAddtionSWTReq", forHTTPHeaderField: "testAddtionSWTReq")
         let task = session.dataTask(with: request) { (data, res, err) in
             
@@ -230,7 +230,7 @@ extension ViewController:NSTextViewDelegate{
         //        let str = "“”，。：¥“”，。：¥“”，。：¥".converToHalfWidth()
         //        print("\(str)")
         
-        string = string.converToHalfWidth()
+        string = string.halfWidthString
         //        string = string.replacingOccurrences(of: "”", with: "\"")
         guard let data = string.data(using: .utf8) else{
             return
