@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "095A1297-CD94-4C82-BB19-17E72EDCB2F5"
+            uuid = "32148428-1E8D-4ED6-A549-75FDA45079B4"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/ModelMaker-ftekfhxbxpvsxrgaknsjfqwhhiog/SourcePackages/checkouts/WTKit/Sources/WTKit/WTModelMaker.swift"
+            filePath = "ModelMaker/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
-            landmarkName = "WTSwiftModelString(with:jsonString:usingHeader:isRootClass:)"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "testCodableRead()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

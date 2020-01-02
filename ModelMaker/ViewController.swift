@@ -126,6 +126,15 @@ class ViewController: NSViewController {
             }
         }
         */
+        let m1 = Model()
+        let m3 = m1.copy()
+        print("m3\(m3)")
+        if let m2:Model = m1.copyOfSelf{
+            m1.a = 2
+            print("\(m1)\(m2)")
+        }
+        
+        
         
     }
     
