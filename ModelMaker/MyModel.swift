@@ -11,3 +11,9 @@ import WTKit
 public class Model:NSObject,CodableObject{
     var a = 1
 }
+public class Model2:NSObject,CodableObject{
+    var a = 1
+}
+
+
+
