@@ -69,25 +69,10 @@ class ViewController: NSViewController {
         return "debug"
     }
     func testMirror() -> Void {
-        let mi = Mirror.init(reflecting: self)
-        for child in mi.children{
-            let name = child.label
-            var value = child.value
-            if name == "testNum" {
-                if let n = name{
-                    value = 2
-                    self.setValue(2, forKey: n)
-                    
-                    //                    let passUnretained = Unmanaged.passUnretained(self)
-                    //                    let opaque = passUnretained.toOpaque()
-                    //                    opaque.assumingMemoryBound(to: <#T##T.Type#>)
-                    //public func assumingMemoryBound<T>(to: T.Type) -> UnsafeMutablePointer<T>
-                    //UnsafeMutableRawPointer.self.assumingMemoryBound
-                    print("\(testNum)")
-                }
-            }
-            print("\(String(describing: name)),\(value)")
-        }
+//        let m1 = Model()
+//        let m2 = m1.copyOfSelf
+//        dprint("\(m1) \(m2)")
+//        let m2 = Model2()
     }
     override func viewDidAppear() {
         super.viewDidAppear()
