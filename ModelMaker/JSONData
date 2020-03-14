@@ -1,36 +1,13 @@
 {
-  "data": [
-    {
-      "id": "3132333435",
-      "exchange_name": "CMAGG",
-      "source": "BTC",
-      "target": "USDT",
-      "timestamp": 0,
-      "price": 8888,
-      "open_24_hour": 0,
-      "volume_24_hour": 0,
-      "volume_24_hour_to": 0,
-      "high_24_hour": 0,
-      "low_24_hour": 0,
-      "change_24_hour": 7777,
-      "change_pct_24_hour": 0.87
-    },
-    {
-      "id": "313233343536",
-      "exchange_name": "Bitfinex",
-      "source": "ETH",
-      "target": "BTC",
-      "timestamp": 0,
-      "price": 777,
-      "open_24_hour": 0,
-      "volume_24_hour": 0,
-      "volume_24_hour_to": 555,
-      "high_24_hour": 0,
-      "low_24_hour": 0,
-      "change_24_hour": 555,
-      "change_pct_24_hour": 0.34
-    }
-  ],
-  "title": "鎴戠殑鍏虫敞",
-  "type": "favorite"
+  "args": {},
+  "headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "zh-cn",
+    "Host": "httpbin.org",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15",
+    "X-Amzn-Trace-Id": "Root=1-5e6b977f-43ebdc40121912f0bb6dc3d0"
+  },
+  "origin": "123.120.230.73",
+  "url": "https://httpbin.org/get"
 }
