@@ -98,7 +98,15 @@ class ViewController: NSViewController {
     
     //这是一个model创建的工具，运行看效果吧,不错吧，😜
     func testCodableRead(){
-        
+        let req = URLRequest.createURLRequest(with: "https://httpbin.org/get")
+        let task = URLSession.shared.dataTask(with: req) { (data, res, err) in
+            guard let d = data else{
+                return
+            }
+            print("\(d.utf8String)")
+        }
+        task.resume()
+        print("\(req.printer)")
         if let url:URL = Bundle.main.url(forResource: "JSONData", withExtension: nil) {
             do{
                 let data = try Data.init(contentsOf: url)
