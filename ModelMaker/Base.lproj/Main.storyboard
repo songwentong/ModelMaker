@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
         <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -850,6 +849,20 @@
                                     <action selector="typeSelect:" target="XfG-lQ-9wD" id="wuR-V8-boB"/>
                                 </connections>
                             </segmentedControl>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gWg-8t-td2">
+                                <rect key="frame" x="1237" y="994" width="71" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="Nqq-HY-qNJ"/>
+                                    <constraint firstAttribute="height" constant="21" id="seD-eJ-9id"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="reset" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kHi-2m-0Gh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="resetButtonPressed:" target="XfG-lQ-9wD" id="qml-XS-yJh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="wyJ-WB-ms8" firstAttribute="baseline" secondItem="FYJ-hx-rIp" secondAttribute="baseline" id="1Vn-Pw-2aU"/>
@@ -865,7 +878,9 @@
                             <constraint firstItem="e1e-09-v17" firstAttribute="centerY" secondItem="Xah-PQ-2CH" secondAttribute="centerY" id="KPE-ff-T06"/>
                             <constraint firstItem="Ffe-fa-0Ja" firstAttribute="width" secondItem="0Bx-1D-MJi" secondAttribute="width" id="Kdk-zQ-KIk"/>
                             <constraint firstItem="vGX-5A-DqA" firstAttribute="leading" secondItem="fFb-JP-Jky" secondAttribute="trailing" constant="30" id="Kp9-1i-yyQ"/>
+                            <constraint firstAttribute="trailing" secondItem="gWg-8t-td2" secondAttribute="trailing" constant="37" id="NWG-KI-yX1"/>
                             <constraint firstItem="hnU-tU-Ut7" firstAttribute="baseline" secondItem="FYJ-hx-rIp" secondAttribute="baseline" id="OlX-Al-gbR"/>
+                            <constraint firstItem="gWg-8t-td2" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="44" id="QNp-78-8bm"/>
                             <constraint firstItem="XzM-ks-3pK" firstAttribute="leading" secondItem="CWS-Uv-9wB" secondAttribute="trailing" constant="10" id="VuK-k9-k5b"/>
                             <constraint firstItem="CWS-Uv-9wB" firstAttribute="top" secondItem="eui-55-erG" secondAttribute="bottom" constant="27" id="WHB-pQ-SCA"/>
                             <constraint firstItem="fFb-JP-Jky" firstAttribute="top" secondItem="wyJ-WB-ms8" secondAttribute="bottom" constant="8" symbolic="YES" id="WZ9-xf-kMQ"/>

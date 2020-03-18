@@ -145,6 +145,7 @@ class ViewController: NSViewController {
         modelTextField.cell?.stringValue = modelStructName
         if let name = UserDefaults.standard.string(forKey: "className"){
             modelTextField.cell?.stringValue = name
+            modelStructName = name
         }
 //        className
         modelTextField.delegate = self
@@ -164,6 +165,10 @@ class ViewController: NSViewController {
         textView.delegate = self;
     }
     
+    @IBAction func resetButtonPressed(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "className")
+        UserDefaults.standard.removeObject(forKey: "jsonString")
+    }
     //生成
     @IBAction func createButton(_ sender: Any) {
         if let cell1 = pathTextField.cell {
