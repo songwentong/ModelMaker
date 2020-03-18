@@ -62,12 +62,14 @@ class ViewController: NSViewController {
         //
         
     }
+    /*
     override var description: String{
         return "ABC"
     }
     override var debugDescription: String{
         return "debug"
     }
+    */
     func testMirror() -> Void {
 //        let m1 = Model()
 //        let m2 = m1.copyOfSelf
@@ -98,15 +100,18 @@ class ViewController: NSViewController {
     
     //这是一个model创建的工具，运行看效果吧,不错吧，😜
     func testCodableRead(){
-        let req = URLRequest.createURLRequest(with: "https://httpbin.org/get")
-        let task = URLSession.shared.dataTask(with: req) { (data, res, err) in
+        let request = URLRequest.createURLRequest(with: "https://httpbin.org/get")
+//        print(Unmanaged.passUnretained(self).toOpaque())
+//        Unmanaged.passUnretained(request)
+//        print(Unmanaged.passUnretained(request).toOpaque())
+        let task = URLSession.shared.dataTask(with: request) { (data, res, err) in
             guard let d = data else{
                 return
             }
             print("\(d.utf8String)")
         }
         task.resume()
-        print("\(req.printer)")
+        print("\(request.printer)")
         if let url:URL = Bundle.main.url(forResource: "JSONData", withExtension: nil) {
             do{
                 let data = try Data.init(contentsOf: url)
