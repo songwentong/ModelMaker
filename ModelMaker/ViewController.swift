@@ -168,6 +168,8 @@ class ViewController: NSViewController {
     @IBAction func resetButtonPressed(_ sender: Any) {
         UserDefaults.standard.removeObject(forKey: "className")
         UserDefaults.standard.removeObject(forKey: "jsonString")
+        modelStructName = "ModelName"
+        modelTextField.cell?.title = modelStructName
     }
     //生成
     @IBAction func createButton(_ sender: Any) {
