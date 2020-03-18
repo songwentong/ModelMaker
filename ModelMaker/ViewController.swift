@@ -170,6 +170,7 @@ class ViewController: NSViewController {
         UserDefaults.standard.removeObject(forKey: "jsonString")
         modelStructName = "ModelName"
         modelTextField.cell?.title = modelStructName
+        checkJSONText()
     }
     //生成
     @IBAction func createButton(_ sender: Any) {
