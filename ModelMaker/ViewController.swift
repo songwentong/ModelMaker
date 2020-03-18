@@ -143,6 +143,10 @@ class ViewController: NSViewController {
         pathTextField.cell?.stringValue = home
         print("\(home)")
         modelTextField.cell?.stringValue = modelStructName
+        if let name = UserDefaults.standard.string(forKey: "className"){
+            modelTextField.cell?.stringValue = name
+        }
+//        className
         modelTextField.delegate = self
         
         if let url:URL = Bundle.main.url(forResource: "JSONData", withExtension: nil) {
@@ -168,6 +172,7 @@ class ViewController: NSViewController {
                 let className = cell2.stringValue
                 
                 let filePath = path + "/" + className + ".swift"
+                UserDefaults.standard.setValue(className, forKey: "className")
                 //                let modelString = WTModelMaker.default.WTSwiftModelString(with: className, jsonString: textView.string,usingHeader: true)
                 
                 
