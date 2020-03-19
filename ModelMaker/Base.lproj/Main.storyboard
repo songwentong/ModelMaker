@@ -926,6 +926,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="run" width="20" height="22.5"/>
+        <image name="run" width="20" height="14.5"/>
     </resources>
 </document>
