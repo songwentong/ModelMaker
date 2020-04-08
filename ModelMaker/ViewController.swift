@@ -286,4 +286,8 @@ extension ViewController:NSTextViewDelegate{
 extension ViewController{
     
 }
-
+struct BaseModel<T:Codable>:Codable{
+    var data:T
+    var code:Int
+    var msg:Int
+}
