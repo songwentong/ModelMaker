@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
         <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -873,11 +873,11 @@
                             <constraint firstItem="Yug-kZ-9Rz" firstAttribute="leading" secondItem="vGX-5A-DqA" secondAttribute="trailing" constant="51" id="3k5-sj-Oia"/>
                             <constraint firstItem="e1e-09-v17" firstAttribute="bottom" secondItem="Xah-PQ-2CH" secondAttribute="bottom" id="629-JH-j7W"/>
                             <constraint firstItem="CWS-Uv-9wB" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="100" id="9RA-ye-9t1"/>
+                            <constraint firstItem="Xah-PQ-2CH" firstAttribute="top" secondItem="Ffe-fa-0Ja" secondAttribute="bottom" constant="9" id="Ceg-bs-lPA"/>
                             <constraint firstItem="CWS-Uv-9wB" firstAttribute="leading" secondItem="e1e-09-v17" secondAttribute="leading" id="Dp6-wO-B3r"/>
                             <constraint firstItem="wyJ-WB-ms8" firstAttribute="leading" secondItem="CWS-Uv-9wB" secondAttribute="leading" id="E3L-P5-dXC"/>
                             <constraint firstItem="FYJ-hx-rIp" firstAttribute="leading" secondItem="wyJ-WB-ms8" secondAttribute="trailing" constant="8" symbolic="YES" id="Feb-pf-Npc"/>
                             <constraint firstItem="Xah-PQ-2CH" firstAttribute="leading" secondItem="e1e-09-v17" secondAttribute="trailing" constant="8" symbolic="YES" id="IFS-Th-YSV"/>
-                            <constraint firstItem="Ffe-fa-0Ja" firstAttribute="height" secondItem="0Bx-1D-MJi" secondAttribute="height" id="Imd-wU-U7A"/>
                             <constraint firstItem="eui-55-erG" firstAttribute="centerY" secondItem="Yug-kZ-9Rz" secondAttribute="centerY" id="JQo-vw-LmV"/>
                             <constraint firstItem="e1e-09-v17" firstAttribute="centerY" secondItem="Xah-PQ-2CH" secondAttribute="centerY" id="KPE-ff-T06"/>
                             <constraint firstItem="Ffe-fa-0Ja" firstAttribute="width" secondItem="0Bx-1D-MJi" secondAttribute="width" id="Kdk-zQ-KIk"/>
