@@ -14,8 +14,8 @@
 		773EDA4B207F345700DB2BAA /* ModelMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773EDA4A207F345700DB2BAA /* ModelMakerTests.swift */; };
 		773EDA56207F345700DB2BAA /* ModelMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773EDA55207F345700DB2BAA /* ModelMakerUITests.swift */; };
 		77A39E652088304F00D3F866 /* JSONData in Resources */ = {isa = PBXBuildFile; fileRef = 77A39E642088304F00D3F866 /* JSONData */; };
+		77CC77DD27FE929100F4A1F2 /* WTKit in Frameworks */ = {isa = PBXBuildFile; productRef = 77CC77DC27FE929100F4A1F2 /* WTKit */; };
 		E1341B9923AC7A1200E63FE2 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1341B9823AC7A1200E63FE2 /* MyModel.swift */; };
-		E1683D5424299ED900359730 /* WTKit in Frameworks */ = {isa = PBXBuildFile; productRef = E1683D5324299ED900359730 /* WTKit */; };
 		E19614A923A115DF0044175D /* AutoBuild.sh in Resources */ = {isa = PBXBuildFile; fileRef = E19614A823A115DF0044175D /* AutoBuild.sh */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1683D5424299ED900359730 /* WTKit in Frameworks */,
+				77CC77DD27FE929100F4A1F2 /* WTKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +177,7 @@
 			);
 			name = ModelMaker;
 			packageProductDependencies = (
-				E1683D5324299ED900359730 /* WTKit */,
+				77CC77DC27FE929100F4A1F2 /* WTKit */,
 			);
 			productName = ModelMaker;
 			productReference = 773EDA34207F345600DB2BAA /* ModelMaker.app */;
@@ -256,7 +256,7 @@
 			);
 			mainGroup = 773EDA2B207F345600DB2BAA;
 			packageReferences = (
-				E1683D5224299ED900359730 /* XCRemoteSwiftPackageReference "WTKit" */,
+				77CC77DB27FE929100F4A1F2 /* XCRemoteSwiftPackageReference "WTKit" */,
 			);
 			productRefGroup = 773EDA35207F345600DB2BAA /* Products */;
 			projectDirPath = "";
@@ -631,9 +631,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E1683D5224299ED900359730 /* XCRemoteSwiftPackageReference "WTKit" */ = {
+		77CC77DB27FE929100F4A1F2 /* XCRemoteSwiftPackageReference "WTKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/songwentong/WTKit.git";
+			repositoryURL = "https://gitee.com/songwentongmike/WTKit";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -642,9 +642,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E1683D5324299ED900359730 /* WTKit */ = {
+		77CC77DC27FE929100F4A1F2 /* WTKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E1683D5224299ED900359730 /* XCRemoteSwiftPackageReference "WTKit" */;
+			package = 77CC77DB27FE929100F4A1F2 /* XCRemoteSwiftPackageReference "WTKit" */;
 			productName = WTKit;
 		};
 /* End XCSwiftPackageProductDependency section */

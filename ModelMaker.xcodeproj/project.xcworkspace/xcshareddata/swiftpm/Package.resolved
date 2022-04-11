@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "WTKit",
-        "repositoryURL": "https://github.com/songwentong/WTKit.git",
-        "state": {
-          "branch": "master",
-          "revision": "eef38c9cce16bb259de8f39a7c0225aec1456d97",
-          "version": null
-        }
+  "pins" : [
+    {
+      "identity" : "wtkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitee.com/songwentongmike/WTKit",
+      "state" : {
+        "branch" : "master",
+        "revision" : "2c40fa7efde998452c31a938980823e8ca383e50"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }
