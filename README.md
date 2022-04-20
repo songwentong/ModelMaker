@@ -7,6 +7,7 @@
 特性
 ==============
 - **轻量**: 遵循系统的Codable,用JSONDecoder或者Encoder编解码
+- **高类型兼容**: 你需求的是Int,服务器给String的情况可以兼容,反过来也可以兼容
 - **支持嵌套**: Model持有Model的情况也能处理
 - **key重定义**: 使用了CodingKeys来重定义Key,方便使用自定义字段名
 - **关键字过滤**: 使用了CodingKeys来重定义Key,过滤掉关键字,或者用`xxx`来声明关键字,例如`default`
