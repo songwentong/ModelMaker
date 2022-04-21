@@ -14,6 +14,7 @@
 		773EDA4B207F345700DB2BAA /* ModelMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773EDA4A207F345700DB2BAA /* ModelMakerTests.swift */; };
 		773EDA56207F345700DB2BAA /* ModelMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773EDA55207F345700DB2BAA /* ModelMakerUITests.swift */; };
 		7746D4892810D951001BE608 /* WTKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7746D4882810D951001BE608 /* WTKit */; };
+		7746D48B2810DAAA001BE608 /* TWGiftWallOuterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7746D48A2810DAAA001BE608 /* TWGiftWallOuterModel.swift */; };
 		77A39E652088304F00D3F866 /* JSONData in Resources */ = {isa = PBXBuildFile; fileRef = 77A39E642088304F00D3F866 /* JSONData */; };
 		E1341B9923AC7A1200E63FE2 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1341B9823AC7A1200E63FE2 /* MyModel.swift */; };
 		E19614A923A115DF0044175D /* AutoBuild.sh in Resources */ = {isa = PBXBuildFile; fileRef = E19614A823A115DF0044175D /* AutoBuild.sh */; };
@@ -63,6 +64,7 @@
 		773EDA51207F345700DB2BAA /* ModelMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelMakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		773EDA55207F345700DB2BAA /* ModelMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMakerUITests.swift; sourceTree = "<group>"; };
 		773EDA57207F345700DB2BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7746D48A2810DAAA001BE608 /* TWGiftWallOuterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TWGiftWallOuterModel.swift; path = ../../../Library/Containers/com.abc.ModelMaker/Data/Documents/TWGiftWallOuterModel.swift; sourceTree = "<group>"; };
 		77A39E642088304F00D3F866 /* JSONData */ = {isa = PBXFileReference; lastKnownFileType = text; path = JSONData; sourceTree = "<group>"; };
 		E1341B9823AC7A1200E63FE2 /* MyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
 		E17053E32422F9E600CBCF9E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				E1341B9823AC7A1200E63FE2 /* MyModel.swift */,
 				E19614A823A115DF0044175D /* AutoBuild.sh */,
 				773EDA3B207F345700DB2BAA /* Assets.xcassets */,
+				7746D48A2810DAAA001BE608 /* TWGiftWallOuterModel.swift */,
 				773EDA3D207F345700DB2BAA /* Main.storyboard */,
 				773EDA40207F345700DB2BAA /* Info.plist */,
 				773EDA41207F345700DB2BAA /* ModelMaker.entitlements */,
@@ -304,6 +307,7 @@
 			files = (
 				773EDA3A207F345600DB2BAA /* ViewController.swift in Sources */,
 				E1341B9923AC7A1200E63FE2 /* MyModel.swift in Sources */,
+				7746D48B2810DAAA001BE608 /* TWGiftWallOuterModel.swift in Sources */,
 				773EDA38207F345600DB2BAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
