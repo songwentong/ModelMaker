@@ -13,7 +13,7 @@
 		773EDA3F207F345700DB2BAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773EDA3D207F345700DB2BAA /* Main.storyboard */; };
 		773EDA4B207F345700DB2BAA /* ModelMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773EDA4A207F345700DB2BAA /* ModelMakerTests.swift */; };
 		773EDA56207F345700DB2BAA /* ModelMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773EDA55207F345700DB2BAA /* ModelMakerUITests.swift */; };
-		779AE3F3280FF41900D18B6D /* WTKit in Frameworks */ = {isa = PBXBuildFile; productRef = 779AE3F2280FF41900D18B6D /* WTKit */; };
+		7746D4862810D88C001BE608 /* WTKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7746D4852810D88C001BE608 /* WTKit */; };
 		77A39E652088304F00D3F866 /* JSONData in Resources */ = {isa = PBXBuildFile; fileRef = 77A39E642088304F00D3F866 /* JSONData */; };
 		E1341B9923AC7A1200E63FE2 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1341B9823AC7A1200E63FE2 /* MyModel.swift */; };
 		E19614A923A115DF0044175D /* AutoBuild.sh in Resources */ = {isa = PBXBuildFile; fileRef = E19614A823A115DF0044175D /* AutoBuild.sh */; };
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				779AE3F3280FF41900D18B6D /* WTKit in Frameworks */,
+				7746D4862810D88C001BE608 /* WTKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +177,7 @@
 			);
 			name = ModelMaker;
 			packageProductDependencies = (
-				779AE3F2280FF41900D18B6D /* WTKit */,
+				7746D4852810D88C001BE608 /* WTKit */,
 			);
 			productName = ModelMaker;
 			productReference = 773EDA34207F345600DB2BAA /* ModelMaker.app */;
@@ -256,7 +256,7 @@
 			);
 			mainGroup = 773EDA2B207F345600DB2BAA;
 			packageReferences = (
-				779AE3F1280FF41900D18B6D /* XCRemoteSwiftPackageReference "WTKit" */,
+				7746D4842810D88C001BE608 /* XCRemoteSwiftPackageReference "WTKit" */,
 			);
 			productRefGroup = 773EDA35207F345600DB2BAA /* Products */;
 			projectDirPath = "";
@@ -631,7 +631,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		779AE3F1280FF41900D18B6D /* XCRemoteSwiftPackageReference "WTKit" */ = {
+		7746D4842810D88C001BE608 /* XCRemoteSwiftPackageReference "WTKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://gitee.com/songwentongmike/WTKit";
 			requirement = {
@@ -642,9 +642,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		779AE3F2280FF41900D18B6D /* WTKit */ = {
+		7746D4852810D88C001BE608 /* WTKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 779AE3F1280FF41900D18B6D /* XCRemoteSwiftPackageReference "WTKit" */;
+			package = 7746D4842810D88C001BE608 /* XCRemoteSwiftPackageReference "WTKit" */;
 			productName = WTKit;
 		};
 /* End XCSwiftPackageProductDependency section */
