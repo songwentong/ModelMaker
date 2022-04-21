@@ -32,7 +32,6 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        WTModelMaker.default.needOptionalMark = false
         WTModelMaker.default.useStruct = false
         typeSegment.selectedSegment = 0
         setDefaultString()
