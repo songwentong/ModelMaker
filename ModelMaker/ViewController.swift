@@ -252,7 +252,8 @@ extension ViewController:NSTextViewDelegate{
         do {
             let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
             isJSON = true
-            let modelString = WTModelMaker.default.WTSwiftModelString(with: modelStructName, jsonString: string, usingHeader: true)
+//            let modelString = WTModelMaker.default.WTSwiftModelString(with: modelStructName, jsonString: string)
+            let modelString = WTModelMaker.default.WTSwiftModelStringWith(className: modelStructName, jsonString: string)
             effect.string = modelString
             print("json:\(json)")
         } catch let error as NSError {
