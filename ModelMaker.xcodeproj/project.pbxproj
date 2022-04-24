@@ -15,6 +15,7 @@
 		773EDA56207F345700DB2BAA /* ModelMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773EDA55207F345700DB2BAA /* ModelMakerUITests.swift */; };
 		7746D4892810D951001BE608 /* WTKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7746D4882810D951001BE608 /* WTKit */; };
 		77A39E652088304F00D3F866 /* JSONData in Resources */ = {isa = PBXBuildFile; fileRef = 77A39E642088304F00D3F866 /* JSONData */; };
+		77B56E99281592B500365B70 /* TempModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B56E98281592B500365B70 /* TempModel.swift */; };
 		E1341B9923AC7A1200E63FE2 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1341B9823AC7A1200E63FE2 /* MyModel.swift */; };
 		E19614A923A115DF0044175D /* AutoBuild.sh in Resources */ = {isa = PBXBuildFile; fileRef = E19614A823A115DF0044175D /* AutoBuild.sh */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		773EDA55207F345700DB2BAA /* ModelMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMakerUITests.swift; sourceTree = "<group>"; };
 		773EDA57207F345700DB2BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77A39E642088304F00D3F866 /* JSONData */ = {isa = PBXFileReference; lastKnownFileType = text; path = JSONData; sourceTree = "<group>"; };
+		77B56E98281592B500365B70 /* TempModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempModel.swift; sourceTree = "<group>"; };
 		E1341B9823AC7A1200E63FE2 /* MyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
 		E17053E32422F9E600CBCF9E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		E19614A823A115DF0044175D /* AutoBuild.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = AutoBuild.sh; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				773EDA40207F345700DB2BAA /* Info.plist */,
 				773EDA41207F345700DB2BAA /* ModelMaker.entitlements */,
 				77A39E642088304F00D3F866 /* JSONData */,
+				77B56E98281592B500365B70 /* TempModel.swift */,
 			);
 			path = ModelMaker;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				773EDA3A207F345600DB2BAA /* ViewController.swift in Sources */,
+				77B56E99281592B500365B70 /* TempModel.swift in Sources */,
 				E1341B9923AC7A1200E63FE2 /* MyModel.swift in Sources */,
 				773EDA38207F345600DB2BAA /* AppDelegate.swift in Sources */,
 			);
