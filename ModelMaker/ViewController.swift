@@ -189,7 +189,7 @@ class ViewController: NSViewController {
                     print("写文件成功,请在Finder查看")
                     let url = URL.init(fileURLWithPath: filePath, relativeTo: nil)
                     NSWorkspace.shared.activateFileViewerSelecting([url])
-                    
+                    NSWorkspace.shared.selectFile(filePath, inFileViewerRootedAtPath: "/")
                 }catch{
                     print("写文件失败")
                 }
